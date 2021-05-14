@@ -218,7 +218,6 @@ def eight(input,  a):
 		bmindex = mindex - remindex
 		return input[:bmindex] + input[amindex:]
 	
-print(eight("Chocolate", 3))
 	# <QUESTION 9>
 
     # Given two string inputs, if one can be made from the other return the boolean True, if not return the boolean False.
@@ -277,6 +276,5 @@ def ten(X,Y):
 		for j in range(X):
 			list1.append(i*j)
 		list.append(list1)
-
 
 	return list
