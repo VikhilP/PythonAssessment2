@@ -187,6 +187,11 @@ def six(input):
 	# Use the cli to access the documentation help(list.sort)
 
 def seven(a, b, c):
+	_list = [a,b,c]
+	_list.sort()
+	if abs(_list[1]-_list[0]) == abs(_list[1]-_list[2]):
+		return True
+
 	return False
 
 	# <QUESTION 8>
@@ -205,8 +210,18 @@ def seven(a, b, c):
     # Use the cli to access the documentation help(str.replace)
 
 def eight(input,  a):
-	return ""
+	mindex = (len(input)//2)
+	remindex = (a-1)//2
 
+	if a == 1:
+		tmindex =mindex+1
+		return input[:mindex] + input[tmindex:]
+	elif a >1:
+		amindex = mindex + remindex+1
+		bmindex = mindex - remindex
+		return input[:bmindex] + input[amindex:]
+	
+print(eight("Chocolate", 3))
 	# <QUESTION 9>
 
     # Given two string inputs, if one can be made from the other return the boolean True, if not return the boolean False.
@@ -222,7 +237,26 @@ def eight(input,  a):
 	# There are no hints for this question.
 
 def nine(string1, string2):
-    return False
+	list1 = list(string1)
+	list2 = list(string2)
+	checklist=[]
+
+	if len(list1) >= len(list2):
+		for i in range(len(list2)):
+			if string2[i] in list1:
+				index = list1.index(string2[i])
+				list1.pop(index)
+				continue
+			return False
+	elif len(list2) > len(list1):
+		for i in range(len(list1)):
+			if string1[i] in list2:
+				index = list2.index(string1[i])
+				list2.pop(index)
+				continue
+			return False
+
+	return True
 
 	# <QUESTION 10>
 
@@ -240,4 +274,6 @@ def nine(string1, string2):
 	# Think about nesting for loops.
 
 def ten(X,Y):
+
+	
 	return []
