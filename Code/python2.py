@@ -1,5 +1,5 @@
 	# INSTRUCTIONS
-
+import random
 	# In case it is not clear, the Question appears first, then examples, then any hints and finally the function that you need to complete appears underneath:
 
 	# <QUESTION>
@@ -137,7 +137,11 @@ def four(input1, input2):
 	# The random module contains a function called randint.
 
 def five():
-    return []
+	_list = []
+	for i in range(5):
+		_list.append(random.randint(50,100)*2)
+    
+	return _list
 
 	# <QUESTION 6>
 
@@ -156,6 +160,9 @@ def five():
 	# There are no hints for this question.
     
 def six(input):
+	temp=input.lower()
+	if temp.endswith("py"):
+		return True
 	return False
 
 	# <QUESTION 7>

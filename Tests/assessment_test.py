@@ -29,35 +29,35 @@ def test_four():
     assert python2.four("return","letter") == "rleettutrenr"
     assert python2.four("Cat","Dog") == "CDaotg"
 
-# def split(input):
-#     if len(input) != 5:
-#         return False
-#     else:
-#         for i in input:
-#             if i % 2 != 0 or 100 > i or i > 200:
-#                 return False
-#         return True
+def split(input):
+    if len(input) != 5:
+        return False
+    else:
+        for i in input:
+            if i % 2 != 0 or 100 > i or i > 200:
+                return False
+        return True
 
-# def test_five():
-#     assert split(python2.five()) == True
-#     assert split(python2.five()) == True
-#     assert split(python2.five()) == True
-#     assert split(python2.five()) == True
-#     assert split(python2.five()) == True
+def test_five():
+    assert split(python2.five()) == True
+    assert split(python2.five()) == True
+    assert split(python2.five()) == True
+    assert split(python2.five()) == True
+    assert split(python2.five()) == True
 
-# def test_six():
-#     assert python2.six("ilovepy") == True
-#     assert python2.six("welovepy") == True
-#     assert python2.six("welovepyforreal") == False
-#     assert python2.six("pyiscool") == False
-#     assert python2.six("hurrayforpY") == True
+def test_six():
+    assert python2.six("ilovepy") == True
+    assert python2.six("welovepy") == True
+    assert python2.six("welovepyforreal") == False
+    assert python2.six("pyiscool") == False
+    assert python2.six("hurrayforpY") == True
 
-# def test_seven():
-#     assert python2.seven(2,4,6) == True
-#     assert python2.seven(4,6,2) == True
-#     assert python2.seven(4,6,3) == False
-#     assert python2.seven(4,60,9) == False
-#     assert python2.seven(2,2,2) == True
+def test_seven():
+    assert python2.seven(2,4,6) == True
+    assert python2.seven(4,6,2) == True
+    assert python2.seven(4,6,3) == False
+    assert python2.seven(4,60,9) == False
+    assert python2.seven(2,2,2) == True
 
 # def test_eight():
 #     assert python2.eight("Hello", 3) == "Ho"
