@@ -36,10 +36,7 @@ def one(input):
 
 	for i in range(len(input)):
 		_list.append(input[i]*3)
-		# _list.append[i]
-		# _list.append[i]
-	
-	
+
 	return "".join(_list)
 
 	# <QUESTION 2>
@@ -58,11 +55,11 @@ def one(input):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(range).
 
 def two(input):
-	if input ==2 or input ==3 or input ==5 or input ==7:
-		return True
-	elif input%2==0 or input%3==0 or input%5 ==0 or input%7 ==0:
-		return False
-	return True #fix with for loop later
+	for i in range(2,input+1):
+		if i == input:
+			return True
+		elif input%i == 0:
+			return False
 	
 
 	# <QUESTION 3>
