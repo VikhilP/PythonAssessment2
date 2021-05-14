@@ -30,7 +30,17 @@
 	# How does a for loop iterate through a string?
 
 def one(input):
-	return ""
+	temp = input.split()
+
+	_list = []
+
+	for i in range(len(input)):
+		_list.append(input[i]*3)
+		# _list.append[i]
+		# _list.append[i]
+	
+	
+	return "".join(_list)
 
 	# <QUESTION 2>
 
@@ -48,7 +58,12 @@ def one(input):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(range).
 
 def two(input):
-    return False
+	if input ==2 or input ==3 or input ==5 or input ==7:
+		return True
+	elif input%2==0 or input%3==0 or input%5 ==0 or input%7 ==0:
+		return False
+	return True #fix with for loop later
+	
 
 	# <QUESTION 3>
 
@@ -65,7 +80,14 @@ def two(input):
 	# What happens if you multiply a string by a number?
 
 def three(a):
-	return 1
+	sum = 0
+
+	for i in range(1,5):
+		temp = str(a)*i
+		print(temp)
+		sum = sum + int(temp)
+	
+	return sum
 
 	# <QUESTION 4>
 
@@ -94,8 +116,12 @@ def three(a):
 	# How would you seperate a string into characters?
 
 def four(input1, input2):
-	return ""
+	appendlist = []
 
+	for i in range(len(input1)):
+		appendlist.append(input1[i])
+		appendlist.append(input2[i])
+	return "".join(appendlist)
 	# <QUESTION 5>
 
 	# Write a function to randomly generate a list with 5 even numbers between 100 and 200 inclusive.
