@@ -239,7 +239,6 @@ print(eight("Chocolate", 3))
 def nine(string1, string2):
 	list1 = list(string1)
 	list2 = list(string2)
-	checklist=[]
 
 	if len(list1) >= len(list2):
 		for i in range(len(list2)):
@@ -274,6 +273,13 @@ def nine(string1, string2):
 	# Think about nesting for loops.
 
 def ten(X,Y):
-
+	list=[]
 	
-	return []
+	for i in range(Y):
+		list1 = []
+		for j in range(X):
+			list1.append(i*j)
+		list.append(list1)
+
+
+	return list
